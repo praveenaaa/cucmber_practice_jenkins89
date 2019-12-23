@@ -20,7 +20,7 @@ public class Test_steps {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://10.232.237.143:443/TestMeApp/fetchcat.htm");
+		driver.get("http://localhost:8099/TestMeApp/fetchcat.htm");
 		String str5=  driver.getTitle();
 		System.out.println(str5);
 		//Assert.assertEquals(str5,"Home" );
